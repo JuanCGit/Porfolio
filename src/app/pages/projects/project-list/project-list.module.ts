@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterLink} from "@angular/router";
 import {ProjectListComponent} from "./project-list.component";
+import {ProjectListRoutingModule} from "./project-list-routing.module";
 
 
 
@@ -11,6 +12,7 @@ import {ProjectListComponent} from "./project-list.component";
   ],
   imports: [
     CommonModule,
+    ProjectListRoutingModule,
     RouterLink
   ]
 })

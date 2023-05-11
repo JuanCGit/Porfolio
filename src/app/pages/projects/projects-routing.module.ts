@@ -8,6 +8,10 @@ const routes: Routes = [
     component: ProjectsComponent,
     children: [
       {
+        path: '',
+        loadChildren: () => import('./project-list/project-list.module').then(m => m.ProjectListModule)
+      },
+      {
         path: 'project1',
         loadChildren: () => import('./project1/project1.module').then(m => m.Project1Module)
       },
@@ -15,6 +19,10 @@ const routes: Routes = [
         path: 'project2',
         loadChildren: () => import('./project2/project2.module').then(m => m.Project2Module)
       },
+      {
+        path: '**',
+        redirectTo: ''
+      }
     ]
   }
 ];
