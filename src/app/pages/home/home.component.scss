@@ -1,6 +1,42 @@
 .home {
   height: 100%;
-  h1 {
-    margin: 0;
+  background-color: #FFE730;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  overflow: hidden;
+  &__text {
+    z-index: 100;
+    padding-left: 10%;
+    color: black;
+    &__title {
+      font-size: 150px;
+      margin: 0;
+      line-height: 0.9;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+  }
+  &__circle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 700px;
+    min-height: 700px;
+    background-color: #0E9594;
+    border-radius: 850px 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .home__text {
+    &__title {
+      font-size: 80px;
+    }
+    &__subtitle {
+      font-size: 25px;
+    }
   }
 }
