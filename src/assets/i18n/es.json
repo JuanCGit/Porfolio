@@ -1,9 +1,9 @@
 {
   "COMMON": {
-    "TRY": "Hola mundo"
   },
   "PAGES": {
     "HOME": {
+      "WELCOME": "Bienvenid@s a mi porfolio!"
     }
   }
 }
