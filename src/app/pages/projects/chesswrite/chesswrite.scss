@@ -1,0 +1,23 @@
+.chesswrite {
+  height: 100%;
+  &__landing {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F02E65;
+    &__title {
+      font-size: 200px;
+      margin: 0;
+    }
+    &__circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      width: 600px;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
